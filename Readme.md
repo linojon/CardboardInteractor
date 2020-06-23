@@ -2,7 +2,11 @@
 
 _Helpers for integrating Google Cardboard XR Plugin with the Unity XR Interaction Toolkit_
 
-These assets provide a simple way to use the XR Interaction Toolkit with the Cardboard XR Plugin.
+These assets provide a simple way to use the XR Interaction Toolkit with the Cardboard XR Plugin. 
+
+* Blog post: https://medium.com/@linojon/an-xr-cardboard-interactor-for-unity-eec6270be2e9
+* Repository: https://github.com/linojon/CardboardInteractor
+
 
 Cardboard plugin documentation:
 
@@ -31,7 +35,7 @@ The camera will now interact with UI buttons on a world canvas
 To make a game object interactable, on the object,
 1. Add a CardboardInteractable script from this package
 
-The camera will now interact with the game object. The default machanic is you point-and-click to select, move your head, then point-and-click again to unselect.
+The camera will now interact with the game object. The default mechanic is you point-and-click to select, move your head, then point-and-click again to unselect.
 
 Note the On Hover Enter, On Hover Exit, On Select Enter, and On Select Exit actions are comparable to the XRI interactable ones.
 
