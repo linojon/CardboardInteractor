@@ -1,0 +1,45 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+# Custom for Visual Studio
+*.cs     diff=csharp
+# Standard to msysgit
+*.doc	 diff=astextplain
+*.DOC	 diff=astextplain
+*.docx diff=astextplain
+*.DOCX diff=astextplain
+*.dot  diff=astextplain
+*.DOT  diff=astextplain
+*.pdf  diff=astextplain
+*.PDF	 diff=astextplain
+*.rtf	 diff=astextplain
+*.RTF	 diff=astextplain
+
+# ------------------------
+# LFS
+#-------------------------
+# libraries and packages
+*.a filter=lfs -crlf
+*.apk filter=lfs diff=lfs merge=lfs -text
+*.dll filter=lfs -crlf
+*.dylib filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs -crlf
+*.rar filter=lfs diff=lfs merge=lfs -text
+*.unitypackage filter=lfs -crlf
+*.zip filter=lfs -crlf
+
+# models and playables
+*.blend filter=lfs -crlf
+*.wav filter=lfs diff=lfs merge=lfs -text
+
+# images
+*.cubemap filter=lfs -crlf
+*.exr filter=lfs -crlf
+*.fbx filter=lfs -crlf
+*.hdr filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs -crlf
+*.mp3 filter=lfs -crlf
+*.mp4 filter=lfs -crlf
+*.png filter=lfs -crlf
+*.psd filter=lfs -crlf
+*.tga filter=lfs -crlf
+*.tif filter=lfs -crlf
