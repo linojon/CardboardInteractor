@@ -9,5 +9,4 @@ EditorBuildSettings:
     path: Assets/CardboardHelpers/Demo/CardboardInteractableDemo.unity
     guid: b8fa09889c5224b47a250cdf70333fac
   m_configObjects:
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 711246eb8243d9344b40e166269dbee0,
-      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 45ea2b830a8dadd4c9750afcb143a4bc, type: 2}
