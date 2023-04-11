@@ -15,8 +15,7 @@ public class XRCardboardController : MonoBehaviour
     public LayerMask interactablesLayers = -1;
 
     public UnityEvent OnTriggerPressed = new UnityEvent();
-    
-    private Camera camera;
+
     private GameObject _gazedAtObject = null;
     private const float MAX_DISTANCE = 10;
 
@@ -40,8 +39,8 @@ public class XRCardboardController : MonoBehaviour
 
     private void Start()
     {
-        if (camera == null)
-            camera = Camera.main;
+        if (GetComponent<Camera>() == null)
+            Debug.LogError("XRCardboardController must be attached to a Camera GameObject.");
 
         SetupCardboard();
 

@@ -8,22 +8,22 @@ public class Highlighter : MonoBehaviour
     public Color selectColor;
 
     private Color defaultColor;
-    private Renderer renderer;
+    private Renderer rendererRef;
 
     private void Start()
     {
-        renderer = GetComponent<Renderer>();
-        defaultColor = renderer.material.color;
+        rendererRef = GetComponent<Renderer>();
+        defaultColor = rendererRef.material.color;
     }
 
     public void Hovering(bool enable)
     {
-        renderer.material.color = (enable ? hoverColor : defaultColor);
+        rendererRef.material.color = (enable ? hoverColor : defaultColor);
     }
 
     public void Selecting(bool enable)
     {
-        renderer.material.color = (enable ? selectColor : defaultColor);
+        rendererRef.material.color = (enable ? selectColor : defaultColor);
     }
 
 }
